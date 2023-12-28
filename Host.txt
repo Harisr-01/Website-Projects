@@ -1,0 +1,10 @@
+Host
+zeus.vse.gmu.edu
+Username
+hrana5
+Password
+October2001%
+Port
+22
+
+http://helios.vse.gmu.edu/~hrana5
