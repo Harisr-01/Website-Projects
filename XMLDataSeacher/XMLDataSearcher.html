@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styler.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Layout</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="banner">
+                    <!--<img alt="banner" src="" width="1000" height="95" class="img-fluid">-->
+                </div>
+                <ul class="qwq">
+                    <li class="kja"><a class="zxc fgd" href="#home">Home</a></li>
+                    <li class="kja"><a href="#news" class="fgd">Search For:</a></li>
+                    <li class="kja"><input type="text" class="form-control hjg" placeholder="Search" name="search" id="searchbox" /></li>
+                    <li class="kja">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" onclick="searchengine()">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div id="nav">
+                    <ul>
+                        <li><a href="#">Link One</a></li>
+                        <li><a href="#">Link Two</a></li>
+                        <li><a href="#">Link Three</a></li>
+                        <li><a href="#">Link Four</a></li>
+                        <li><a href="#">Link Five</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div id="content">
+                    <br />
+                    <p>Search for a food name, food color, or food type</p>
+                    <h1 id="results"></h1>
+                    <table id="Table">
+                        
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="footer">
+                    <p>This is the footer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function searchengine() {
+        const input = document.getElementById("searchbox").value.toLowerCase();
+        fetch('items.xml')
+            .then(response => response.text())
+            .then(xmlString => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+                const items = xmlDoc.getElementsByTagName("item");
+
+                let result = '';
+                for (let i = 0; i < items.length; i++) {
+                    const name = items[i].getElementsByTagName("name")[0].textContent.toLowerCase();
+                    const color = items[i].getElementsByTagName("color")[0].textContent.toLowerCase();
+                    const type = items[i].getElementsByTagName("type")[0].textContent.toLowerCase();
+                    const info = items[i].getElementsByTagName("info")[0].textContent.toLowerCase();
+
+                    if (name.includes(input) || color.includes(input) || type.includes(input)) {
+                        result += `<tr><th>${name}</th></tr><tr><td>${color}</td></tr><tr><td>${type}</td></tr><tr><td><form action="${info}"><input type="submit" value="Go to" class="button" /></form></td></tr>`;
+                    }
+                }
+                document.getElementById("results").innerHTML = 'Results for: ' + input;
+                document.getElementById("Table").innerHTML =  result || 'This term does not exist or it has not been added yet.';
+            })
+            .catch(error => {
+
+            });
+    }
+</script>
+</html>
