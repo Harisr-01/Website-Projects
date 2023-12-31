@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sign In to Store</title>
+    <link rel="stylesheet" type="text/css" href="signin.css" />
+</head>
+<body>
+    <h2>Log in or Sign up to your Account</h2>
+    <div class="container" id="container">
+        <!--Sign Up Div-->
+        <div class="formcontain signupcontain">
+            <form action="#">
+                <h1>Make An Account</h1>
+                <div class="socialcontain">
+                    <!--Buttons-->
+                    <a href="https://accounts.google.com/" class="google"><i class="fab google"></i></a>
+                    <a href="https://login.live.com/" class="outlook"><i class="fab outlook"></i></a>
+                    <a href="https://www.mail.com/" class="mail"><i class="fab mail"></i></a>
+                </div>
+                <span>Or Use Your Preferred Mail Account</span>
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <!--Sign In Div-->
+        <div class="formcontain signincontain">
+            <form action="#">
+                <h1>Log In</h1>
+                <div class="socialcontain">
+                    <!--Buttons-->
+                    <a href="https://accounts.google.com/" class="google"><i class="fab google"></i></a>
+                    <a href="https://login.live.com/" class="outlook"><i class="fab outlook"></i></a>
+                    <a href="https://www.mail.com/" class="mail"><i class="fab mail"></i></a>
+                </div>
+                <span>Or Use Your Preferred Mail Account</span>
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot Username?</a>
+                <a href="#">Forgot Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <!--To Overlay Divs-->
+        <div class="overlaycontain">
+            <div class="overlay">
+                <!--Left Div-->
+                <div class="panel overlaytoleft">
+                    <h1>Welcome Back to Our Store</h1>
+                    <p>Login with your username and password credentials</p>
+                    <button class="hide" id="signin">Sign In</button>
+                </div>
+                <!--Right Div-->
+                <div class="panel overlaytoright">
+                    <h1>Welcome to Our Store</h1>
+                    <p>Make an account with a new username, password and email to become a customer</p>
+                    <button class="hide" id="signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; This website is just a sample page and is not a real store.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    //Variables that access the buttons and divs
+    const signin = document.getElementById("signin");
+    const signup = document.getElementById("signup");
+    const container = document.getElementById("container");
+
+    //Button variables has a action event that when clicked, the container will add new css to do the swapping
+    signup.addEventListener('click', () => { container.classList.add("rightpanelactive") });
+    signin.addEventListener('click', () => { container.classList.remove("rightpanelactive") });
+</script>
+</html>

@@ -1,0 +1,231 @@
+﻿body {
+    /*No line at end of all chars*/
+    font-family: 'Arial', sans-serif;
+    background-color: dimgray;
+    /*Removes side spacing and extra spaces*/
+    margin: 0;
+    color: whitesmoke;
+    /*Provides greater length and space for each line*/
+    line-height: 1.6;
+}
+a {
+    /*Removes link underlines*/
+    text-decoration: none;
+    color: lightgrey;
+}
+#headercontainer {
+    margin: 0;
+    /*Removes any space in any corner of the div*/
+    padding: 0;
+    /*Set div background to image that will not repeat, is centered, and fit to contain*/
+    background: url('Images/background.jpeg') no-repeat center/cover;
+    width: 100%;
+    /*Set to view port height a certain size*/
+    height: 100vh;
+    /*Set to contain image not to move from its desired position*/
+    position: relative;
+    /*Removes any contraints from not making image stretch, does not make image bulge out, covers any bulges and contstaints to image, goes ontop of background*/
+    overflow-y: hidden;
+}
+/*Accesses a specific div inside another one*/
+#headercontainer .container{
+    /*Moves down the div and provides a top space for the div*/
+    margin-top: 25vh;
+}
+#headercontainer h1{
+    /*A root element font size, REM should only work for font sizes*/
+    font-size: 4rem;
+    /*A space provided for the bottom, resulting element to go more above*/
+    margin-bottom: 0;
+}
+#headercontainer h2{
+    /*A root element font size, REM should only work for font sizes*/
+    font-size: 2rem;
+}
+/*Navigation Bar, not related to list*/
+nav {
+    height: 40px;
+    /*To take whole width of the screen*/
+    width: 100%;
+    /*Dependent and chnages by width*/
+    background-color: dimgray;
+    /*The black color only applies to list points ul and li, but does not provide to a elements*/
+    color: rgb(51,34,34);
+    /*To not move the navbar, removes any contraints and spaces, div sticks to the page as the page scrolls, div moves along with page scroll*/
+    position: fixed;
+}
+/*Navigation Items, related to list*/
+nav ul{
+    /*Maring and padding of 0 contains list elements to be inside and contained in navigation bar*/
+    margin: 0;
+    padding: 0;
+}
+/*Navigation Items*/
+nav li{
+    /*Displays list element all in 1 whole line, not seperated by new lines*/
+    display: inline;
+    /*Puts elements in the most left hand side, straightens inline even more. all is close in left hand side*/
+    float: left;
+}
+nav a{
+    /*Makes all a element displayed horizontally and all contained with thier own block*/
+    display: inline-block;
+    /*Every block is 100 pixels wide and seperations between each block are equal, Only works with inline-block*/
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    /*First is spacing between top and bottom, second is spacing between left and right*/
+    padding: 10px 0;
+    color: #eee;
+}
+nav li:hover{
+    background-color: darkgrey;
+}
+.container {
+    /*Determines where the text will be aligned*/
+    max-width: 1180px;
+    text-align: center;
+    /*Makes sure there is equal spacing for the align*/
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.bigger{
+    font-size: 1.3rem;
+}
+footer .footerstyle {
+    /*Make the div structured as rows and columns, adds spacing*/
+    display: grid;
+    /*Provides space and gap between each row*/
+    grid-gap: 20px;
+    /*Generates and repeats 3 columns for 3 lists with 1 fractional unit */
+    grid-template-columns: repeat(3,1fr);
+    /*Provides space and gap between each column and around them*/
+    padding: 2rem;
+    /*Moves all the text to the left*/
+    text-align: left;
+    font-size: 14px;
+}
+/*Styles the list*/
+footer .footerstyle ul{
+    list-style: none;
+}
+/*Styles nonlink li which is the 1st child, 1st li only to be accessed*/
+footer .footerstyle ul li:first-child{
+    font-size: 1.2rem;
+    /*Spaces the bottom of the nonlink li to the the link lis*/
+    padding-bottom: 0.5rem;
+    /*Provides a line in the bottom border with a color, style type, and thickness*/
+    border-bottom: lightgray solid 2px;
+    /*Provides a space from the borderline to the link lis*/
+    margin-bottom: 1rem;
+}
+footer .copyright{
+    background-color: gray;
+    padding: 0.5rem;
+    text-align: center;
+}
+/*For many sections*/
+.section {
+    /*Provides spacing inside the sections*/
+    padding: 2rem 0;
+}
+/*The titles*/
+.sectionheader {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.section h3{
+    font-size: 2rem;
+}
+/*A Function with stored variable colors*/
+:root {
+    --primary-color: black;
+    --primary-color-hover: grey;
+    --secondary-color: darkslategrey;
+    --secondary-color-hover: darkgrey;
+    --light-color: lightgrey;
+}
+
+.btn{
+    padding: 1rem;
+    color: white;
+    display: inline-block;
+}
+/*CSS Styles that access the stored variable colors*/
+.btn-primary{
+    background: var(--primary-color);
+}
+.btn-primary:hover {
+    background: var(--primary-color-hover);
+}
+.btn-secondary {
+    background: var(--secondary-color);
+}
+.btn-secondary:hover {
+    background: var(--secondary-color-hover);
+}
+.textlight{
+    color: var(--light-color);
+}
+.mb{
+    margin-bottom: 1rem;
+}
+
+/*----------------------------------------------------------------------Now Begin CSS for products.html----------------------------------------------------------------------*/
+/*Shifts the Heading and sorter more to the right, there is padding left and right for space to be given */
+.minicontainer{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.row{
+    /*meaning the row will become flexible when resizing, meaning strecthed out, Also moves sorting to the right*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.columnsof4 {
+    flex-basis: 19%;
+    padding: 50px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.columnsof4 img{
+    width: 110%;
+}
+.columnsof4:hover{ transform: translateY(-50px);}
+.checked{ color: darkgoldenrod; }
+h4 {color: lightgray; font-weight: normal;}
+.buttons{
+    margin: 0 40px 80px;
+}
+.buttons span{
+    display: inline-block;
+    border: 1px solid darkslategrey;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.buttons span:hover{
+    background: darkslategrey;
+    color: white;
+}
+select{
+    border: 1px solid green;
+    padding: 5px;
+}
+select:focus{
+    outline:none;
+}
+/*Gives enough spacing for selector so it wont overlap with images*/
+.row2{
+    justify-content :space-between;
+    margin: 100px auto 50px;
+}

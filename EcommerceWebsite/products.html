@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Predefined CSS and Icons to be used by Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Internal CSS style that gives margin and padding box sizing to fit, highest priority, Margin is automatically defined based on page border, there is no padding in between, divs are box size-->
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--Due to priorities of CSS Selectors, Inline CSS has more priority than outside CSS,
+    therefore a differenet image can be displayed in header but it will not cover. A height is needed that will not change the external one-->
+    <div id="headercontainer" style="background: url('Images/banner1.png') no-repeat center/cover; height: 500px;">
+        <header>
+            <nav class="navbar">
+                <ul class="navelements">
+                    <li>
+                        <a href="Ecommerce.html">My Store</a>
+                    </li>
+                    <li>
+                        <a href="Ecommerce.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="onsale.html">On Sale</a>
+                    </li>
+                    <li>
+                        <a href="#moreinfo">More Info</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="minicontainer">
+        <!--1st row of the page table strcuture, H2 is a column, select is column-->
+        <div class="row row2">
+            <h2>All Products</h2>
+            <select>
+                <option value="#">Default Sort</option>
+                <option value="#">Sort by Lowest Price to Highest Price</option>
+                <option value="#">Sort by Highest Price to Lowest Price</option>
+                <option value="#">Sort by Customer Ratings</option>
+                <option value="#">Sort by Brand</option>
+            </select>
+        </div>
+    </div>
+    <!--2nd row of the page table strcuture, 4 columns are made in this row-->
+    <div class="row">
+        <div class="columnsof4">
+            <img src="Images/key.jpeg" class="storeimage" />
+            <h4>Asthetic White Keybaord and Mouse</h4>
+            <div class="rating">
+                <!--5 star checks are predefined CSS for icons and symbols, these are font awsome icons, provided by link-->
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$29.99</p>
+        </div>
+        <div class="columnsof4">
+            <img src="Images/cpu.jpeg" class="storeimage" />
+            <h4>Intel I5 Core CPU with Multiple Cores</h4>
+            <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>$69.99</p>
+        </div>
+        <div class="columnsof4">
+            <img src="Images/mobo.jpeg" class="storeimage" />
+            <h4>Firmware Full Intergrated Motherboard for PCs</h4>
+            <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$69.99</p>
+        </div>
+        <div class="columnsof4">
+            <img src="Images/rasberry.jpeg" class="storeimage" />
+            <h4>Rasberry PI Full Computer Circuit Board</h4>
+            <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$59.99</p>
+        </div>
+    </div>
+    <!--3rd row with 4 columns-->
+    <div class="row">
+        <div class="columnsof4">
+            <img src="Images/ram.jpeg" class="storeimage" />
+            <h4>Firmware RAM 100GB</h4>
+            <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$45.99</p>
+        </div>
+        <div class="columnsof4">
+            <img src="Images/charger.jpeg" class="storeimage" />
+            <h4>Portable Charger with 3 Charger wires: IOS, USBC, and Standard</h4>
+            <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$19.99</p>
+        </div>
+        <div class="columnsof4">
+            <img src="Images/plug.jpeg" class="storeimage" />
+            <h4>Long Standard Charger Wire</h4>
+            <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$10.99</p>
+        </div>
+    </div>
+    <div class="buttons">
+        <!--Inline CSS Command-->
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <!--Arrow-->
+        <span>&#8594;</span>
+    </div>
+    <hr />
+    <footer>
+        <div class="container">
+            <div class="footerstyle">
+                <ul>
+                    <li>Shop Products</li>
+                    <li>
+                        <a href="#">Hardware</a>
+                    </li>
+                    <li>
+                        <a href="#">Devices</a>
+                    </li>
+                    <li>
+                        <a href="#">Peripherals</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Our Store</li>
+                    <li>
+                        <a href="#">Policies</a>
+                    </li>
+                    <li>
+                        <a href="#">Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">Warranties</a>
+                    </li>
+                    <li>
+                        <a href="#">All our items</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>About Us</li>
+                    <li>
+                        <a href="#">Who We Are</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#">Locations</a>
+                    </li>
+                    <li>
+                        <a href="#">Profiles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; This website is just a sample page and is not a real store.</p>
+        </div>
+    </footer>
+</body>
+</html>
