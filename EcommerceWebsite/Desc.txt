@@ -1,11 +1,1 @@
-# Create a folder locally
-mkdir EcommerceWebsite
-
-cd EcommerceWebsite
-touch Desc.txt
-
-git add .
-git commit -m "Added folder and file"
-
-
-git push origin main
+Sample website layout inteded for ecommerical and webstore sites what a main page with interal links, a sample sign-in/sign-up page, and 2 sample product displaying pages
