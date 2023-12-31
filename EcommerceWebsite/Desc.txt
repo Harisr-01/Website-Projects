@@ -1,0 +1,11 @@
+# Create a folder locally
+mkdir EcommerceWebsite
+
+cd EcommerceWebsite
+touch Desc.txt
+
+git add .
+git commit -m "Added folder and file"
+
+
+git push origin main
