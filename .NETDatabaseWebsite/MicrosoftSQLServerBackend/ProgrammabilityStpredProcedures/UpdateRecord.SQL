@@ -14,6 +14,6 @@ BEGIN
     UPDATE dbo.Cars
     SET Car_Name = @NewColumn1,
     Car_Brand = @NewColumn2,
-		Car_Status = @NewColumn3
+	Car_Status = @NewColumn3
     WHERE Car_ID = @RecordID;
 END
