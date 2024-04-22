@@ -1,0 +1,2 @@
+Where the JS CRUD files are along with the JS header navbar and home
+files all in where the index.js file accesses.
