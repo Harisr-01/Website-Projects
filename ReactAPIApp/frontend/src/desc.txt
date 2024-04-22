@@ -1,0 +1,4 @@
+This is where the index.js file is that is loaded on the Node.js server
+on port 3000. Also contains the JS file modules in where CRUD happens
+in the "components" folder, where the index js file accesses as modules
+along with the JS home page and navigation bar
