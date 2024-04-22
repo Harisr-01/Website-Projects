@@ -1,15 +1,2 @@
-# Create a folder locally
-mkdir folder_name
-
-# Navigate into the folder
-cd folder_name
-
-# Create a dummy file (required for Git to recognize the folder)
-touch Desc.txt
-
-# Add and commit the changes
-git add .
-git commit -m "Added folder and file"
-
-# Push changes to GitHub
-git push origin main
+AJAX website that allows users to type searches in a searchbox that looks for elements and thier values
+in a XML file and then displays them by a click of a button.
