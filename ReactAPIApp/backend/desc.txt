@@ -1,0 +1,4 @@
+The backend part of the React app that has JSON data stored in a JS file.
+This is the actual API part of the app that allows users in other clients 
+to GET(read), PUT(make), POST(update), and DELETE JSON data in the file
+by using these HTTP method requests in other clients. 
