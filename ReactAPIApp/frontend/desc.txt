@@ -1,0 +1,6 @@
+The frontend SPA (single page app) part of the React app
+that gets the backend app port number, and then does 
+CRUD with a variety of HTTP methods like GET, PUT, POST,
+and DELETE in JS React files. Each CRUD method has a JS
+file that connects the fetching with JSX code, and the index.js
+file accesses them by importing these JS files as modules.
