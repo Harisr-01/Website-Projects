@@ -1,0 +1,6 @@
+A React application that is a REST API that allows users to do CRUD
+(create, read, update, and delete) of JSON data with React app link.
+This is the backend which also stores the data as JSON in a JS file.
+The frontend part is the user friendly visual SPA (single page app)
+website that gets / connects to the JSON backend and does easy 
+user friendly CRUD of that data.
