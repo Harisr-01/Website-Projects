@@ -1,1 +1,3 @@
-Sample website layout inteded for ecommerical and webstore sites what a main page with interal links, a sample sign-in/sign-up page, and 2 sample product displaying pages
+Sample website that is modern and user-freindly
+layout inteded for ecommerical and webstore sites what a main page with interal links,
+a sample sign-in/sign-up page, and 2 sample product displaying pages
