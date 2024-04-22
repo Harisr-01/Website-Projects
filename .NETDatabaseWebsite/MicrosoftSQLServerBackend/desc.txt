@@ -1,1 +1,3 @@
-
+The backend part of the application. This is the files for the Micrsoft SQL Server where the data is
+stored. Has SQL queries to make tables and insert the data and has stored procedures to do CRUD
+for the frontend to handle.
