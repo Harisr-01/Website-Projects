@@ -1,1 +1,4 @@
-d
+The .NET frontend that is deployed on localhost with IIS server. Configured in Microsoft Visual Studio. Has a main home
+page that filters out data by buttons, and filtered options are directed to a page that acts on it by stored procedures.
+There is also ASPX pages to do CRUD and each page acts on a stored procedure from the backend, the CS pages assosiated with
+it make the connection to the database in order for this to happen.
