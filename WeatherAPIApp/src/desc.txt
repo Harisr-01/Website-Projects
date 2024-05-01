@@ -1,0 +1,1 @@
+Where index.js and getWeather.js are stored
