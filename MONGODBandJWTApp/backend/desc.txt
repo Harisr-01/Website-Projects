@@ -1,3 +1,5 @@
 Backend part that connects to MONGODB database and uses HTTP method routes so that public users can 
-create, read, update, and delete database entries. Also has JWT authentication for each route by
-utilzing tokens and authorization
+make, read, update, and delete database entries. Also has JWT authentication for each route by
+utilzing tokens and authorization. Public users would need to send thier login credentials stored
+in MONGODB database and use the token codes they are given once they are loggged in to make, update,
+and delete data. Without logins and using the tokens these actions cannot happen.
