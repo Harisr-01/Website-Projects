@@ -1,0 +1,3 @@
+Backend part that connects to MONGODB database and uses HTTP method routes so that public users can 
+create, read, update, and delete database entries. Also has JWT authentication for each route by
+utilzing tokens and authorization
