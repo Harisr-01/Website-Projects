@@ -1,0 +1,1 @@
+A React app that uses REST API to retrieve data from MONGODB Database and uses JWT security authentication in the backend and frontend
