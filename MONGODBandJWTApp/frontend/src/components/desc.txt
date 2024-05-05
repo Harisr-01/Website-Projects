@@ -1,1 +1,4 @@
-
+Where the JS CRUD files are along with the JS header navbar and home
+files all in where the index.js file accesses. Also contains JS files
+that allows user login and sign up. Header js file has options to choose
+the 2.
