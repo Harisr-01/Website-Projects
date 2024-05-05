@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+img
+{
+  width:50%
+}
+a{
+  color:white;
+}
+#HomeCard{
+  background: url('https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg') no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;  
+}
+#HomeContain{
+  background-color: white; 
+  text-align: center;
+  min-width: 100px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#button{
+  background-color: #242424;
+  border-color: #242424;
+}
+#navbar{
+  background-color: #242424;
+  color: white;
+}
+#navlink{
+  color: white;
+}
+.navlink{
+  color: white;
+}
+#ContentTitle {
+  margin: 0;
+  padding: 0;
+  background: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg') no-repeat center/cover;
+  width: 100vw;
+  height: 25vh;
+  position: relative;
+  color: white;
+  overflow-y: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
