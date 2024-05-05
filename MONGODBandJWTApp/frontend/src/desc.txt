@@ -3,4 +3,5 @@ on port 3000. Also contains the JS file modules in where CRUD happens
 in the "components" folder, where the index js file accesses as modules
 along with the JS home page and navigation bar. Also has JS files that
 allow users to make a account and login by using JWT. Only authorized
-users can do the making, updating, and deleting of MONGODB data.
+users can do the making, updating, and deleting of MONGODB data.The "auth"
+folder components allow the user login and access to happen.
