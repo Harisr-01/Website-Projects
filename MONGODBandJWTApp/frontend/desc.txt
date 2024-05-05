@@ -1,0 +1,4 @@
+Frontend part of app that has user freindly interface that shows MONGODB data
+and allows users to do user friendly CRUD with just form fill outs and buttons.
+Also uses JWT security to allow users to sign up and login. Only logged in users
+can make, delete, and update data only.
