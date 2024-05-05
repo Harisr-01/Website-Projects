@@ -1,0 +1,3 @@
+Contains JS files that make API routes for make, update, and delete
+as private routes that are configured by already made users in the
+MONGODB database and uses thier JWT tokens when they log in.
